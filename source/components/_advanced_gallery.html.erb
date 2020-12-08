@@ -1,0 +1,31 @@
+<section class="adv-gallery">
+  <div class="adv-gallery__grid container max-width-adaptive-xl">
+    <div>
+      <% link_to src.one.link do %>
+        <%= image_tag src.one.path,
+                      class: "adv-gallery__img",
+                      alt: src.one.alt %>
+      <% end %>
+    </div>
+    <div>
+      <% link_to src.two.link do %>
+        <%= image_tag src.two.path,
+                      class: "adv-gallery__img",
+                      alt: src.two.alt %>
+      <% end %>
+    </div>
+    <div>
+      <% link_to src.three.link do %>
+        <%= image_tag src.three.path,
+                      class: "adv-gallery__img",
+                      alt: src.three.alt %>
+      <% end %>
+    </div>
+    <div class="bg-contrast-lower padding-md flex@lg">
+      <div class="margin-top-auto@lg">
+        <div class="border-left border-contrast-high height-xxl margin-bottom-sm display@lg" aria-hidden="true"></div>
+        <p class="text-md"><%= src.text %></p>
+      </div>
+    </div>
+  </div>
+</section>
