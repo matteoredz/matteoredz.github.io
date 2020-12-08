@@ -1,0 +1,16 @@
+<section class="hero bg padding-y-xxl">
+  <div class="container max-width-adaptive-sm">
+    <div class="text-sm opacity-60% margin-bottom-xxs"><%= label %></div>
+    <div class="text-component margin-bottom-sm">
+      <h1><%= title %></h1>
+      <p><%= body %></p>
+    </div>
+    <% if locals[:btn_label].present? %>
+      <div class="flex flex-wrap items-center gap-sm">
+        <a href="#0" class="btn btn--primary">
+          <%= locals[:btn_label] %>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</section>

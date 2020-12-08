@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Middlepack</title>
+    <title><%= data.site.title %></title>
+    <meta name="description" content="<%= data.site.description %>">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <%= stylesheet_link_tag "style" %>
     <%= javascript_include_tag "site.min" %>
   </head>
   <body class="<%= page_classes %>">
+    <%= partial "components/main_header" %>
     <%= yield %>
+    <%= partial "components/main_footer" %>
   </body>
 </html>
