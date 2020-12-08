@@ -14,7 +14,7 @@
         <div class="header__label">Main menu</div>
         <ul class="header__list">
           <li class="header__item"><a href="#0" class="header__link">About</a></li>
-          <li class="header__item"><a href="mailto:mttrss5@gmail.com" class="header__link">Contact</a></li>
+          <li class="header__item"><%= mail_to "mttrss5@gmail.com", "Contact", class: "header__link" %></li>
           <li class="header__item header__item--divider" aria-hidden="true"></li>
           <li class="header__item"><a href="https://github.com/matteoredz" class="btn btn--primary">
             <i class="fab fa-github"></i>
