@@ -1,4 +1,4 @@
-<header class="header position-relative js-header ">
+<header class="header position-relative js-header">
   <div class="header__container container max-width-lg">
     <div class="header__logo">
       <a href="#0">
@@ -13,11 +13,10 @@
       <div class="header__nav-inner">
         <div class="header__label">Main menu</div>
         <ul class="header__list">
-          <li class="header__item"><a href="#0" class="header__link">About</a></li>
-          <li class="header__item"><%= mail_to "mttrss5@gmail.com", "Contact", class: "header__link" %></li>
+          <li class="header__item"><%= mail_to "mttrss5@gmail.com", "mttrss5@gmail.com", class: "header__link" %></li>
           <li class="header__item header__item--divider" aria-hidden="true"></li>
-          <li class="header__item"><a href="https://github.com/matteoredz" class="btn btn--primary">
-            <i class="fab fa-github"></i>
+          <li class="header__item"><a href="https://github.com/matteoredz" class="btn btn--subtle">
+            <%= image_tag "iconmonstr-github-1.svg", width: 15, height: 15, alt: "GitHub di Matteoredz" %>
           </a></li>
         </ul>
       </div>
