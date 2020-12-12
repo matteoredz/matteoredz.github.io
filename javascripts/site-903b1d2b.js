@@ -1,6 +1,0 @@
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
-import 'codyhouse-framework/main/assets/js/util.js'
-import './components/_1_header.js'
