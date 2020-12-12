@@ -1,12 +1,5 @@
 <%= partial "components/hero",
-            locals: {
-              label: "",
-              title: "Welcome",
-              body: "I'm a Software Developer with master degree in Computer Science, passionate about creating web applications powered by Ruby w/ Rails." \
-                    "<br><br>" \
-                    "I'm currently employed in <a href='https://wisemotions.com/' target='_blank'>Wise Emotions</a>," \
-                    " the digital power of <a href='https://www.telepass.com/' target='_blank'>Telepass</a>."
-            } %>
+            locals: { label: "", title: "Welcome", body: data.site.about } %>
 
 <%= partial "components/advanced_gallery",
-            locals: { src: data.gallery } %>
+            locals: { src: data.site.gallery } %>

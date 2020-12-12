@@ -6,4 +6,23 @@ human_url:
 title: Matteo Rossi - Senior Software Engineer
 description: Software Engineer passionate about creating web apps powered by Ruby w/ Rails.
 author: Matteo Rossi
+about: |
+  I'm a Senior Software Engineer with master degree in Computer Science, passionate about creating web applications powered by Ruby on Rails.
+  I started working at Moze (mozestudio.com) as Quality Assurance Engineer. I was involved in use-cases and scenario planning to help developers writing better software with the help of some automated tools.
+  In 2015 I started a new career journey at Zero (zero.it). In the beginning I was employed to maintain large scale PHP Web application. After a few months I started approaching to Ruby's world and I took part in the development of complex Web applications mainly using Ruby on Rails. Among the most important projects I've worked on are Dove e Come Mi Curo (doveecomemicuro.it), Mistermatic (mistermatic.it) and many others.
+  At the end of 2018 I moved to Pazienti.it (pazienti.it) where I was tasked of leading the technical team through decisions that the company would have used in the next few years to implement its products.
+  Now I'm working at WiseEmotions (wisemotions.com) as Ruby Team Lead. In this fast moving company, technical heart of Telepass S.p.A. (telepass.com), I design, develop and maintain many Ruby on Rails api-only microservices written with TDD approach.
+gallery:
+  one:
+    path: "ItaxCode.jpg"
+    alt: ItaxCode Ruby Gem
+    link: "https://github.com/matteoredz/itax-code"
+  two:
+    path: "WhatsNext.jpg"
+    alt: What's next?
+  three:
+    path: "Middlepack.jpg"
+    alt: Middleman 4 + Webpack
+    link: "https://github.com/matteoredz/middlepack"
+  text: The latest projects I've worked on
 ...

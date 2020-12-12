@@ -8,11 +8,12 @@
     <meta name="description" content="<%= data.site.description %>">
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <%= stylesheet_link_tag "style" %>
-    <%= javascript_include_tag "site.min" %>
   </head>
   <body class="<%= page_classes %>">
     <%= partial "components/main_header" %>
     <%= yield %>
     <%= partial "components/main_footer" %>
+    <script src="https://unpkg.com/codyhouse-framework/main/assets/js/util.js"></script>
+    <%= javascript_include_tag "site.min" %>
   </body>
 </html>

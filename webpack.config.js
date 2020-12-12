@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: {
     site: ['./source/javascripts/site.js'],
-    style: ['./source/stylesheets/site.css.scss'],
+    style: ['./source/stylesheets/style.scss'],
   },
   output: {
     path: path.resolve(__dirname, '.tmp/dist'),
@@ -16,9 +16,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
+          MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader',
         ],
       }
     ]
