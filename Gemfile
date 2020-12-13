@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem "middleman"
 gem "middleman-autoprefixer"
 gem "middleman-livereload"
+gem "builder"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
