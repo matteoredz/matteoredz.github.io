@@ -1,10 +1,9 @@
 ---
-language: it
-name:
-url:
-human_url:
+language: en
+name: Matteo Rossi
+url: https://matteorossi.dev
 title: Matteo Rossi - Senior Software Engineer
-description: Software Engineer passionate about creating web apps powered by Ruby w/ Rails.
+description: Senior Software Engineer passionate about creating web apps with Ruby on Rails.
 author: Matteo Rossi
 about: |
   I'm a Senior Software Engineer with master degree in Computer Science, passionate about creating web applications powered by Ruby on Rails.

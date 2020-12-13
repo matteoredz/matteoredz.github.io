@@ -1,3 +1,5 @@
+require "builder"
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -26,9 +28,10 @@ configure :development do
   config[:js_dir]  = ".tmp/dist"
 end
 
-page "/*.xml",  layout: false
-page "/*.json", layout: false
-page "/*.txt",  layout: false
+page "/*.xml",        layout: false
+page "/*.json",       layout: false
+page "/*.txt",        layout: false
+page "/sitemap.html", layout: false
 
 configure :build do
   config[:http_prefix] = ""
