@@ -1,28 +1,33 @@
 ---
-title: ✨ Nice to meet ya!
+title: My home
 linkedin_url: https://www.linkedin.com/in/matteoredz/
 ---
 
-<h3>✋ About me</h3>
+<%= render Image.new(src: "assets/me.png", alt: "Matteo Memoji", max_width: "250px") %>
+
+<h1>✋ About me</h1>
 <p>I'm a software developer, passionate about tackling complex problems with simple yet elegant solutions. I work mostly with Ruby (and Rails).</p>
 <p>When I'm not coding, I enjoy watching Anime, reading Manga, and hiking in the mountains.</p>
 <p>Wanna know more about me? Check out my <%= link_to "LinkedIn page", current_page.data.linkedin_url %></a>.</p>
 
-<h3>🤓 Projects</h3>
+<h3>🤓 OSS Projects</h3>
 <ul>
   <li><a href="https://github.com/matteoredz/itax-code">ItaxCode</a>: A Ruby gem to manage Italian tax codes</li>
   <li><a href="https://github.com/matteoredz/rack-idempotency_key">Rack::IdempotencyKey</a>: A Rack Middleware implementing the idempotency design principle using the Idempotency-Key HTTP header</li>
 </ul>
 
 <h3>📚 On my shelf</h3>
-<%# TODO: Add reading now badge %>
 <ul>
+  <li><mark>Now</mark> <a href="https://www.goodreads.com/book/show/22512931-building-microservicesr">Building Microservices: Designing Fine-Grained Systems</a></li>
   <li><a href="https://www.goodreads.com/book/show/85009.Design_Patterns">Design Patterns: Elements of Reusable Object-Oriented Software</a></li>
   <li><a href="https://www.goodreads.com/book/show/218474091-practical-object-oriented-design">Practical Object-Oriented Design: An Agile Primer Using Ruby</a></li>
   <li><a href="https://www.goodreads.com/book/show/31183020-99-bottles-of-oop">99 Bottles of OOP</a></li>
-  <li><mark>Reading now</mark> <a href="https://www.goodreads.com/book/show/22512931-building-microservicesr">Building Microservices: Designing Fine-Grained Systems</a></li>
   <li><a href="https://www.goodreads.com/book/show/50363684-become-an-effective-software-engineering-manager">Become an Effective Software Engineering Manager</a></li>
 </ul>
 
-<%# <h3>Random thoughts</h3> %>
-<%# Here a list of blog posts %>
+<h3>💭 Random thoughts</h3>
+<ul>
+  <% site.resources.glob("blog/*html*").each do |post| %>
+    <li><%= link_to post.data.title, post.url %></li>
+  <% end %>
+</ul>
