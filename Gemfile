@@ -17,4 +17,4 @@ gem "markdown-rails", "~> 1.0"
 gem "phlex-rails"
 gem "view_component"
 
-gem "standard"
+gem "rubocop-rails-omakase", require: false, group: [ :development ]
